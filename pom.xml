@@ -15,6 +15,7 @@
     <description>localstack-web</description>
     <properties>
         <java.version>17</java.version>
+        <spring-cloud-starter-aws-messaging.version>2.4.2</spring-cloud-starter-aws-messaging.version>
     </properties>
     <dependencies>
         <dependency>
@@ -32,6 +33,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.awspring.cloud</groupId>
+            <artifactId>spring-cloud-aws-messaging</artifactId>
+            <version>${spring-cloud-starter-aws-messaging.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

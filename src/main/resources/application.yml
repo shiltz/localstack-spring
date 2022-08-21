@@ -1,0 +1,15 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: us-east-1
+      auto: false
+    credentials:
+      access-key: localstack
+      secret-key: localstack
+    end-point:
+      uri: http://localhost:4566
+    queue:
+      uri: http://localhost:4566
+      name: sample-queue.fifo
